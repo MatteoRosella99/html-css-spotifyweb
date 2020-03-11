@@ -1,3 +1,8 @@
+/* FOGLIO DI STILE CSS ORDINATO ALFABETICAMENTE per
+  TAGS - CLASSI - ID
+  Media Query in fondo*/
+
+/* TAGS */
 *{
   margin: 0;
   padding: 0;
@@ -6,8 +11,26 @@
 header{
   display: flex;
 }
+section{
+  background-color: #141922;
+  margin-left: 250px;
+  padding-bottom: 100px;
+}
+section::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* CLASSI */
+
+/* inizio sezione .canzoni */
 .canzoni{
   padding-top: 110px;
+}
+.canzoni::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 .canzoni-evidenza > ul > li{
   display: inline-block;
@@ -51,27 +74,45 @@ header{
   line-height: 18px;
   color: white;
 }
-.leftmenu > li > a > img {
-  height: 37px;
-  margin-left: 20px;
-  padding-bottom: 8px;
+
+/* inizio sezione .john-doe */
+.john-doe{
+  padding-top: 50px;
+  margin: 0 20px;
+}
+.john-doe-img > img{
+  padding-right: 15px;
+  width: 100%;
+}
+.john-doe-img{
+  width: 16.66%;
   float: left;
+  text-align: center;
 }
-.leftmenu > li > a > span{
-  float: left;
-  padding-top: 7px;
-  padding-left: 5px;
-  color: grey;
-}
-.leftmenu > li > a{
-  display: inline-block;
-}
-.leftmenu > li > a > span:hover{
+.john-doe-img > h4{
+  padding: 12px 7px 8px 2px;
+  font-size: 18px;
+  line-height: 18px;
   color: white;
 }
-.leftmenu > li > a:hover{
-  border-left: 3px yellow solid;
+.john-doe::after{
+  content: "";
+  display: table;
+  clear: both;
 }
+.john-doe > h2{
+  color: white;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+.john-doe > p{
+  color: grey;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+
+/* inizio sezione left */
 .left{
   height: 100vh;
   width: 250px;
@@ -94,20 +135,6 @@ header{
   color: white;
   padding: 10px 0 20px 20px;
 }
-.leftlist{
-  padding-left: 20px;
-  margin-top: 15px;
-}
-.leftlist > li{
-  padding-top: 20px;
-}
-.leftlist > li > a{
-  text-decoration: none;
-  color: grey;
-}
-.leftlist > li > a:hover{
-  color: white;
-}
 .left > span::before{
   display: inline-block;
   content: "+";
@@ -127,6 +154,43 @@ header{
   color: white;
   cursor: pointer;
 }
+.leftmenu > li > a > img {
+  height: 37px;
+  margin-left: 20px;
+  padding-bottom: 8px;
+  float: left;
+}
+.leftmenu > li > a > span{
+  float: left;
+  padding-top: 7px;
+  padding-left: 5px;
+  color: grey;
+}
+.leftmenu > li > a{
+  display: inline-block;
+}
+.leftmenu > li > a > span:hover{
+  color: white;
+}
+.leftmenu > li > a:hover{
+  border-left: 3px yellow solid;
+}
+.leftlist{
+  padding-left: 20px;
+  margin-top: 15px;
+}
+.leftlist > li{
+  padding-top: 20px;
+}
+.leftlist > li > a{
+  text-decoration: none;
+  color: grey;
+}
+.leftlist > li > a:hover{
+  color: white;
+}
+
+/* inizio sezione .fissata */
 .fissata{
   position: fixed;
   top: 0;
@@ -149,10 +213,42 @@ header{
   cursor: pointer;
   font-size: 14px;
 }
-section{
-  background-color: #141922;
-  margin-left: 250px;
-  height: 1800px;
+
+/* inizio sezione .popular */
+.popular{
+  padding-top: 50px;
+  margin: 0 20px;
+}
+.popartist > img{
+  padding-right: 15px;
+  width: 100%;
+  border-radius: 50%;
+}
+.popartist{
+  width: 16.66%;
+  float: left;
+  text-align: center;
+}
+.popartist > h4{
+  padding: 12px 7px 8px 2px;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+}
+.popular::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.popular > h2{
+  color: white;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+.popular > p{
+  color: grey;
+  font-size: 17px;
+  padding-bottom: 20px;
 }
 
 .barra-ascolto{
@@ -162,10 +258,17 @@ section{
   width: 100%;
   bottom: 0;
 }
+
+
 .installa-app{
   height: 100px;
   background-color: black;
   width: 250px;
   position: fixed;
   bottom: 150px;
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+  .popartist, .canzoni-sez, .john-doe-img{
+    width: 25%;
+  }
 }
