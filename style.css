@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
 }
 header{
   display: flex;
@@ -272,27 +273,46 @@ section::after{
   background-color: black;
   width: 250px;
   position: fixed;
-  bottom: 150px;
+  bottom: 80px;
 }
-
+@media screen and (min-width:1101px){
+  #logop{
+    display: none;
+  }
+}
 @media screen and (min-width:700px) and (max-width:1100px){
-  .popartist, .canzonidue, .john-doe-img{
+  .canzonidue {
     width: 50%;
     padding-bottom: 15px;
+  }
+  #logop{
+    display: none;
+  }
+  .john-doe-img, .popartist{
+    width: 25%;
   }
   .pad{
     padding-bottom: 110px;
   }
 }
 @media screen and (min-width:550px) and (max-width:700px){
-  .popartist, .canzonidue, .john-doe-img{
+  #logop{
+    display: none;
+  }
+  .canzonidue{
     width: 100%;
     padding-bottom: 35px;
   }
+  .john-doe-img, .popartist{
+    width: 50%;
+  }
 }
-@media screen and (max-width:550px){
-  .leftmenu > li > a > span, .left > img, .left > h3, .left > span, .leftlist{
+@media screen and (max-width:549px){
+  .leftmenu > li > a > span, #logo, .left > h3, .left > span, .leftlist{
     display: none;
+  }
+  #logop{
+    padding-top: 15px;
   }
   .leftmenu > li > a > img{
     margin-top: 15px;
@@ -306,8 +326,14 @@ section::after{
   .fissata{
     left: 70px;
   }
-  .popartist, .canzonidue, .john-doe-img{
+  .canzonidue{
     width: 100%;
     padding-bottom: 35px;
+  }
+  .john-doe-img, .popartist{
+    width: 50%;
+  }
+  .fissata > button {
+    margin-right: 90px;
   }
 }
