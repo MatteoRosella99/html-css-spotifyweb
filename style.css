@@ -61,7 +61,7 @@ section::after{
   width: 100%;
 }
 .canzoni-sez{
-  width: 16.66%;
+  width: 50%;
   float: left;
   text-align: center;
 }
@@ -74,7 +74,15 @@ section::after{
   line-height: 18px;
   color: white;
 }
-
+.canzonidue{
+  float: left;
+  width: 33%;
+}
+.canzonidue::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 /* inizio sezione .john-doe */
 .john-doe{
   padding-top: 50px;
@@ -259,7 +267,6 @@ section::after{
   bottom: 0;
 }
 
-
 .installa-app{
   height: 100px;
   background-color: black;
@@ -267,8 +274,40 @@ section::after{
   position: fixed;
   bottom: 150px;
 }
+
 @media screen and (min-width:700px) and (max-width:1100px){
-  .popartist, .canzoni-sez, .john-doe-img{
-    width: 25%;
+  .popartist, .canzonidue, .john-doe-img{
+    width: 50%;
+    padding-bottom: 15px;
+  }
+  .pad{
+    padding-bottom: 110px;
+  }
+}
+@media screen and (min-width:550px) and (max-width:700px){
+  .popartist, .canzonidue, .john-doe-img{
+    width: 100%;
+    padding-bottom: 35px;
+  }
+}
+@media screen and (max-width:550px){
+  .leftmenu > li > a > span, .left > img, .left > h3, .left > span, .leftlist{
+    display: none;
+  }
+  .leftmenu > li > a > img{
+    margin-top: 15px;
+  }
+  .left, .installa-app{
+    width: 70px;
+  }
+  section {
+    margin-left: 70px;
+  }
+  .fissata{
+    left: 70px;
+  }
+  .popartist, .canzonidue, .john-doe-img{
+    width: 100%;
+    padding-bottom: 35px;
   }
 }
