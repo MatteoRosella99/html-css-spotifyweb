@@ -5,6 +5,7 @@
     <title>SpotifyWeb-Replica</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf18bee6b6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -63,38 +64,80 @@
           <h2><strong>Recently played</strong></h2>
           <div class="canzonidue">
             <div class="canzoni-sez">
-              <img src="img/metal_lifting.jpg" alt="">
-              <h4>Heavy Metal</h4>
-              <span>Subtitle</span>
+              <div class="canzoni-sez-hover">
+                <img src="img/metal_lifting.jpg" alt="">
+                <div class="hover">
+                  <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+              </div>
+              <div class="canzoni-sez-text">
+                <h4>Heavy Metal</h4>
+                <span>Subtitle</span>
+              </div>
             </div>
             <div class="canzoni-sez">
-              <img src="img/stranger.jpeg" alt="">
-              <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-              <span>Kyle Dixon & Michael Stein</span>
+              <div class="canzoni-sez-hover">
+                <img src="img/stranger.jpeg" alt="">
+                <div class="hover">
+                  <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+              </div>
+              <div class="canzoni-sez-text">
+                <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)l</h4>
+                <span>Kyle Dixon & Michael Stein</span>
+              </div>
             </div>
           </div>
           <div class="canzonidue">
-            <div class="canzoni-sez pad">
-              <img src="img/aquietplace.jpeg" alt="">
-              <h4>A quiet place</h4>
-              <span>Subtitle</span>
+            <div class="canzoni-sez">
+              <div class="canzoni-sez-hover">
+                <img src="img/aquietplace.jpeg" alt="">
+                <div class="hover">
+                  <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+              </div>
+              <div class="canzoni-sez-text pad">
+                <h4>A quiet place</h4>
+                <span>Subtitle</span>
+              </div>
             </div>
             <div class="canzoni-sez">
-              <img src="img/split.jpeg" alt="">
-              <h4>Split</h4>
-              <span>Subtitle</span>
+              <div class="canzoni-sez-hover">
+                <img src="img/split.jpeg" alt="">
+                <div class="hover">
+                  <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+              </div>
+              <div class="canzoni-sez-text">
+                <h4>Split</h4>
+                <span>Subtitle</span>
+              </div>
             </div>
           </div>
           <div class="canzonidue">
             <div class="canzoni-sez">
-              <img src="img/cure.jpeg" alt="">
-              <h4>A cure for wellness</h4>
-              <span>Subtitle</span>
+              <div class="canzoni-sez-hover">
+                <img src="img/cure.jpeg" alt="">
+                <div class="hover">
+                  <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+              </div>
+              <div class="canzoni-sez-text">
+                <h4>A cure for wellness</h4>
+                <span>Subtitle</span>
+              </div>
             </div>
             <div class="canzoni-sez">
-              <img src="img/sinister.jpeg" alt="">
-              <h4>Sinister</h4>
-              <span>Subtitle</span>
+              <div class="canzoni-sez-hover">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="hover">
+                  <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+              </div>
+              <div class="canzoni-sez-text">
+                <h4>Sinister</h4>
+                <span>Subtitle</span>
+              </div>
             </div>
           </div>
         </div>
@@ -103,11 +146,21 @@
         <h2>Creato per John Doe</h2>
         <p>Più ascolti, più accurati saranno i suggerimenti</p>
         <div class="john-doe-img">
-          <img src="img/radar.jpeg" alt="">
+          <div class="john-doe-hover">
+            <img src="img/radar.jpeg" alt="">
+            <div class="hover">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+          </div>
           <h4>Release Radar</h4>
         </div>
         <div class="john-doe-img">
-          <img src="img/mixdaily.jpeg" alt="">
+          <div class="john-doe-hover">
+            <img src="img/mixdaily.jpeg" alt="">
+            <div class="hover">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+          </div>
           <h4>Daily Mix 1</h4>
         </div>
       </div>
@@ -115,25 +168,71 @@
         <h2>Artisti più popolari</h2>
         <p>Più ascolti, più accurati saranno i suggerimenti</p>
         <div class="popartist">
-          <img src="img/youg.jpeg" alt="">
+          <div class="popartist-hover">
+            <img src="img/youg.jpeg" alt="">
+            <div class="hover circ">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+          </div>
           <h4>Lana del Rey</h4>
         </div>
         <div class="popartist">
-          <img src="img/einaudi.jpeg" alt="">
+          <div class="popartist-hover">
+            <img src="img/einaudi.jpeg" alt="">
+            <div class="hover circ">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+          </div>
           <h4>Ludovico Einaudi</h4>
         </div>
       </div>
     </section>
     <footer>
       <div class="installa-app">
-
+        <a href="#">
+          <i class="fas fa-arrow-circle-down"></i>
+          <span>Installa App</span>
+        </a>
+        <hr>
+        <div class="installa-profilo">
+          <img src="img/profile.svg" alt="">
+          <h4><strong>John Doe</strong></h4>
+        </div>
       </div>
       <div class="barra-ascolto">
+        <div class="barra-riproduzione">
+          <img src="img/sinister.jpeg" alt="">
+          <div class="barra-rip-line">
+            <a href="#"><strong>Sinister</strong></a>
+            <p><a href="#">Brano Nome</a></p>
+          </div>
+          <div class="barra-cuore">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </div>
+        </div>
+        <div class="barralist">
+          <ul>
+            <li><a href="#"><i class="fas fa-random"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+            <li><a href="#"><i class="far fa-play-circle" id="play"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+            <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+          </ul>
+        <span>0:25</span>
+        <div class=>
+          <div class="barl">
+            <div class="barp">
 
+            </div>
 
+          </div>
+
+        </div>
+        <span>4:35</span>
+
+        </div>
       </div>
-
     </footer>
-
   </body>
 </html>

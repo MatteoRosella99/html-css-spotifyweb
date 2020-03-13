@@ -12,15 +12,21 @@
 header{
   display: flex;
 }
+hr{
+  margin: 12px 0;
+}
 section{
   background-color: #141922;
   margin-left: 250px;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
 }
 section::after{
   content: "";
   display: table;
   clear: both;
+}
+footer{
+  display: block;
 }
 /* CLASSI */
 
@@ -57,19 +63,30 @@ section::after{
   font-size: 26px;
   padding-bottom: 40px;
 }
-.canzoni-sez > img{
+ .canzoni-sez > img{
   padding-right: 15px;
   width: 100%;
+  z-index: 2;
 }
 .canzoni-sez{
   width: 50%;
   float: left;
   text-align: center;
 }
-.canzoni-sez > span{
+.canzoni-sez-hover > img{
+  padding-right: 15px;
+  width: 100%;
+}
+.canzoni-sez-hover{
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.canzoni-sez-text > span{
   color: grey;
 }
-.canzoni-sez > h4{
+.canzoni-sez-text > h4{
   padding: 12px 7px 8px 2px;
   font-size: 18px;
   line-height: 18px;
@@ -84,12 +101,75 @@ section::after{
   display: table;
   clear: both;
 }
+.canzoni-sez-hover:hover .hover{
+  display: block;
+}
+.canzoni-sez-hover:hover{
+  cursor: pointer;
+}
+
+.hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 100%;
+  font-size: 60px;
+  display: none;
+  padding-top: 25%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.hover > a{
+  color: white;
+}
+
+.installa-app{
+  height: 100px;
+  background-color: black;
+  width: 250px;
+  position: fixed;
+  bottom: 110px;
+  padding: 10px 25px;
+  z-index: 3;
+}
+.installa-app > a{
+  color: grey;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.installa-app > a:hover{
+  color: white;
+}
+.installa-app > a > span{
+  padding-left: 10px;
+}
+.installa-proflilo{
+  vertical-align: middle;
+}
+.installa-profilo > img{
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  border-radius: 50%;
+  vertical-align: middle;
+
+}
+.installa-profilo > h4{
+  color: white;
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
 /* inizio sezione .john-doe */
 .john-doe{
   padding-top: 50px;
   margin: 0 20px;
 }
-.john-doe-img > img{
+.john-doe-hover{
+  position: relative;
+}
+.john-doe-hover > img{
   padding-right: 15px;
   width: 100%;
 }
@@ -119,11 +199,16 @@ section::after{
   font-size: 17px;
   padding-bottom: 20px;
 }
-
+.john-doe-hover:hover .hover{
+  display: block;
+}
+.john-doe-hover:hover{
+  cursor: pointer;
+}
 
 /* inizio sezione left */
 .left{
-  height: 100vh;
+  height: 100%;
   width: 250px;
   flex-direction: column;
   background-color: black;
@@ -187,6 +272,7 @@ section::after{
 .leftlist{
   padding-left: 20px;
   margin-top: 15px;
+  overflow-y: auto;
 }
 .leftlist > li{
   padding-top: 20px;
@@ -207,6 +293,7 @@ section::after{
   width: 100%;
   height: 110px;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 .fissata > button{
   float: right;
@@ -217,21 +304,28 @@ section::after{
   padding: 15px 43px;
   border: white solid 1px;
   border-radius: 50px;
+
 }
 .fissata > button:hover{
   cursor: pointer;
   font-size: 14px;
 }
-
+.circ{
+  border-radius: 50%;
+}
 /* inizio sezione .popular */
 .popular{
   padding-top: 50px;
   margin: 0 20px;
 }
-.popartist > img{
+.popartist-hover > img{
   padding-right: 15px;
   width: 100%;
-  border-radius: 50%;
+  height: 101%;
+  border-radius: 100%;
+}
+.popartist-hover{
+  position: relative;
 }
 .popartist{
   width: 16.66%;
@@ -243,6 +337,12 @@ section::after{
   font-size: 18px;
   line-height: 18px;
   color: white;
+}
+.popartist-hover:hover .hover{
+  display: block;
+}
+.popartist-hover:hover{
+  cursor: pointer;
 }
 .popular::after{
   content: "";
@@ -259,22 +359,80 @@ section::after{
   font-size: 17px;
   padding-bottom: 20px;
 }
-
 .barra-ascolto{
-  height: 80px;
+  height: 110px;
   background-color: #282828;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
-
-.installa-app{
-  height: 100px;
-  background-color: black;
-  width: 250px;
-  position: fixed;
-  bottom: 80px;
+.barra-ascolto > span{
+  display: inline-block;
 }
+.barra-cuore{
+  display: inline-block;
+  float: right;
+  height: 100px;
+  vertical-align: middle;
+  right: 0;
+  padding-top: 20px;
+}
+.barra-cuore > a{
+  color: grey;
+}
+.barra-cuore > a:hover{
+  color: white;
+}
+.barra-riproduzione{
+  padding: 25px 15px;
+  width: 250px;
+  float: left;
+}
+.barra-rip-line{
+  display: inline-block;
+  padding-left: 15px;
+}
+.barralist{
+  width: 70vw;
+  float: left;
+  text-align: center;
+}
+.barralist > ul > li{
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.barralist > ul > li:hover{
+  font-size: 24px;
+}
+.barralist > ul > li > a{
+  color: white;
+}
+.barralist > ul{
+  padding-top: 15px;
+}
+.barra-rip-line > a, .barra-rip-line > p > a{
+  color: white;
+  text-decoration: none;
+}
+.barra-rip-line > a:hover, .barra-rip-line > p > a:hover{
+  text-decoration: underline;
+}
+.barra-riproduzione > img{
+  width: 60px;
+}
+
+/* ID */
+
+#play{
+  font-size: 42px;
+}
+#play:hover{
+  font-size: 46px;
+}
+
+
 @media screen and (min-width:1101px){
   #logop{
     display: none;
