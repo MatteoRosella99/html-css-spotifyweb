@@ -30,6 +30,75 @@ footer{
 }
 /* CLASSI */
 
+/* inizio sezione .barra */
+.barra-ascolto{
+  height: 110px;
+  background-color: #282828;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.barra-ascolto > span{
+  display: inline-block;
+}
+.barra-cuore{
+  display: inline-block;
+  float: left;
+  height: 100px;
+  vertical-align: middle;
+  right: 0;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.barra-cuore > a{
+  color: grey;
+}
+.barra-cuore > a:hover{
+  color: white;
+}
+.barra-riproduzione{
+  padding: 25px 15px;
+  width: 30%;
+  float: left;
+}
+.barra-rip-line{
+  display: inline-block;
+  padding-left: 15px;
+  float: left;
+}
+.barralist{
+  width: 70%;
+  float: left;
+  padding-left: 16vw;
+  padding-top: 20px;
+}
+.barralist > ul > li{
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.barralist > ul > li:hover{
+  font-size: 24px;
+}
+.barralist > ul > li > a{
+  color: white;
+}
+.barralist > ul{
+  padding-top: 15px;
+}
+.barra-rip-line > a, .barra-rip-line > p > a{
+  color: white;
+  text-decoration: none;
+}
+.barra-rip-line > a:hover, .barra-rip-line > p > a:hover{
+  text-decoration: underline;
+}
+.barra-riproduzione > img{
+  width: 60px;
+  float: left;
+}
+
 /* inizio sezione .canzoni */
 .canzoni{
   padding-top: 110px;
@@ -108,6 +177,33 @@ footer{
   cursor: pointer;
 }
 
+/* inizio sezione .fissata */
+.fissata{
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.fissata > button{
+  float: right;
+  margin-right: 255px;
+  margin-top: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 15px 43px;
+  border: white solid 1px;
+  border-radius: 50px;
+
+}
+.fissata > button:hover{
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Inizio sezione hover */
 .hover{
   position: absolute;
   top: 0;
@@ -122,7 +218,7 @@ footer{
 .hover > a{
   color: white;
 }
-
+/* Inizio sezione installa */
 .installa-app{
   height: 100px;
   background-color: black;
@@ -285,34 +381,6 @@ footer{
   color: white;
 }
 
-/* inizio sezione .fissata */
-.fissata{
-  position: fixed;
-  top: 0;
-  left: 250px;
-  width: 100%;
-  height: 110px;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-.fissata > button{
-  float: right;
-  margin-right: 255px;
-  margin-top: 30px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.0);
-  padding: 15px 43px;
-  border: white solid 1px;
-  border-radius: 50px;
-
-}
-.fissata > button:hover{
-  cursor: pointer;
-  font-size: 14px;
-}
-.circ{
-  border-radius: 50%;
-}
 /* inizio sezione .popular */
 .popular{
   padding-top: 50px;
@@ -359,74 +427,10 @@ footer{
   font-size: 17px;
   padding-bottom: 20px;
 }
-.barra-ascolto{
-  height: 110px;
-  background-color: #282828;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-.barra-ascolto > span{
-  display: inline-block;
-}
-.barra-cuore{
-  display: inline-block;
-  float: left;
-  height: 100px;
-  vertical-align: middle;
-  right: 0;
-  padding-top: 20px;
-  padding-left: 30px;
-}
-.barra-cuore > a{
-  color: grey;
-}
-.barra-cuore > a:hover{
-  color: white;
-}
-.barra-riproduzione{
-  padding: 25px 15px;
-  width: 30%;
-  float: left;
-}
-.barra-rip-line{
-  display: inline-block;
-  padding-left: 15px;
-  float: left;
-}
-.barralist{
-  width: 70%;
-  float: left;
-  padding-left: 16vw;
-  padding-top: 20px;
-}
-.barralist > ul > li{
-  display: inline-block;
-  font-size: 22px;
-  vertical-align: middle;
-  padding: 0 10px;
-}
-.barralist > ul > li:hover{
-  font-size: 24px;
-}
-.barralist > ul > li > a{
-  color: white;
-}
-.barralist > ul{
-  padding-top: 15px;
-}
-.barra-rip-line > a, .barra-rip-line > p > a{
-  color: white;
-  text-decoration: none;
-}
-.barra-rip-line > a:hover, .barra-rip-line > p > a:hover{
-  text-decoration: underline;
-}
-.barra-riproduzione > img{
-  width: 60px;
-  float: left;
-}
 
+.circ{
+  border-radius: 50%;
+}
 /* ID */
 
 #play{
@@ -436,7 +440,7 @@ footer{
   font-size: 46px;
 }
 
-
+/* Media query */
 @media screen and (min-width:1101px){
   #logop{
     display: none;
