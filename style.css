@@ -371,11 +371,12 @@ footer{
 }
 .barra-cuore{
   display: inline-block;
-  float: right;
+  float: left;
   height: 100px;
   vertical-align: middle;
   right: 0;
   padding-top: 20px;
+  padding-left: 30px;
 }
 .barra-cuore > a{
   color: grey;
@@ -385,17 +386,19 @@ footer{
 }
 .barra-riproduzione{
   padding: 25px 15px;
-  width: 250px;
+  width: 30%;
   float: left;
 }
 .barra-rip-line{
   display: inline-block;
   padding-left: 15px;
+  float: left;
 }
 .barralist{
-  width: 70vw;
+  width: 70%;
   float: left;
-  text-align: center;
+  padding-left: 16vw;
+  padding-top: 20px;
 }
 .barralist > ul > li{
   display: inline-block;
@@ -421,6 +424,7 @@ footer{
 }
 .barra-riproduzione > img{
   width: 60px;
+  float: left;
 }
 
 /* ID */
@@ -443,7 +447,7 @@ footer{
     width: 50%;
     padding-bottom: 15px;
   }
-  #logop{
+  #logop, .barra-cuore > a{
     display: none;
   }
   .john-doe-img, .popartist{
@@ -454,8 +458,17 @@ footer{
   }
 }
 @media screen and (min-width:550px) and (max-width:700px){
-  #logop{
+  #logop, .barra-cuore > a{
     display: none;
+  }
+  .barralist{
+    padding-left: 0;
+  }
+  .barra-riproduzione{
+    width: 40%;
+  }
+  .barralist{
+    width: 60%;
   }
   .canzonidue{
     width: 100%;
@@ -466,10 +479,19 @@ footer{
   }
 }
 @media screen and (max-width:549px){
-  .leftmenu > li > a > span, #logo, .left > h3, .left > span, .leftlist{
+  .leftmenu > li > a > span, #logo, .left > h3, .left > span, .leftlist, .installa-app > a > span, .installa-profilo > h4, .barra-rip-line > p{
     display: none;
   }
-  #logop{
+  .barralist{
+    padding-left: 10vw;
+  }
+  .barra-rip-line{
+    padding-left: 0;
+  }
+  .barra-riproduzione{
+    width: 20%;
+  }
+  #logop, .barra-cuore > a{
     padding-top: 15px;
   }
   .leftmenu > li > a > img{
@@ -493,5 +515,12 @@ footer{
   }
   .fissata > button {
     margin-right: 90px;
+  }
+  .installa-app {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .installa-app > a{
+    padding-left: 12px;
   }
 }
